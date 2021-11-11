@@ -1,0 +1,56 @@
+Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios básicos de una persona. Los servicios básicos son:
+agua, telefono. Si la persona es menor a 20 años se descuenta el 20% del total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua 
+consumidos en el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados en el mes y el costo de cada minuto.
+
+1. Inicio
+2. serviciosBasicos, d[0,n]
+3. costoAgua, d[0,n]
+4. costoTelefono, d[0,n]
+5. edad, i[0,n]
+6. porcentajer, d[0,n]
+7. descuento, d[0,n]
+8. litrosAgua, d[0,n]
+9. minutosTelefono, d[0,n]
+10. agua, d[0,n]
+11. telefono, d[0,n]
+
+12. Escribir "Ingrese la cantidad de agua consumida en litros"
+13. Leer litrosAgua
+14. Escribir "Ingrese el costo de cada litro de agua"
+15. Leer costoAgua
+16. Escribir "Ingrese la cantidad de minutos de uso del telefono"
+17. Leer minutosTelefono
+18. Escribir "Ingrese el costo de un minuto de telefono"
+19. Leer costoTelefono 
+20. Escribir "Digite su edad"
+21. Leer edad
+
+22. agua <-- litrosAgua * costoAgua
+23. telefono <-- minutosTelefono * costoTelefono
+24. serviciosBasicos <-- agua + telefono
+25. Si edad < 20 entonces
+26. 	porcentaje <--- 20
+27. 	descuento <-- (serviciosBasicos * porcentaje)/100
+28. 	serviciosBasicos <-- (serviciosBasicos - Descuento)
+29. 	Caso contrarios
+30. 	descuento <-- 0
+31. Fin si
+32. Escribir "Su gasto en servicios basicos es : " + serviciosBasicoso
+33. Fin
+
+===========================================================================================================================================================================================
+
+1. Inicio
+2. Ingresar costo del litro de agua
+3. Ingresar costo del minuto de telefono
+4. Ingresar los litros consumidos de agua
+5. Ingresar los minutos consumidos de telefono
+6. Multiplicar el costo del litro de agua con los litros consumidos de agua
+7. Multiplicar el costo de un minuto de telefono con los minutos usados en el mes
+8. Sumar el resultado de las multiplicaciones
+9. Preguntar la edad de la persona
+10. Si la persona es menor a 20 años se realiza un descuento del 20%
+11. Al resultado de la suma la multiplicamos por 20 y dividimos para 5
+12. Si la persona es mayor a 20 años no se realiza un descuento
+13. Presentar el resultado total
+14. Fin
