@@ -15,21 +15,21 @@ Elaborar un solución que pida como datos de entrada el número de días y el pr
 11. Leer precioDiario
 12. subtotal = numeroDias * precioDiario
 
-13. Si numeroDias >= 5 AND numeroDias <10 entonces
+13. Si numeroDias > 5 AND numeroDias <=10 entonces
 14.	porcentaje <-- 10
 15. 	descuento <-- (subtotal * porcentaje)/100
 16. 	Total <-- (subtotal - descuento)
 17. 	Escribir "Su total a pagar es : " + Total
 18. Fin si
 
-19. Si numeroDias >= 10 AND numeroDias < 15
+19. Si numeroDias > 10 AND numeroDias <= 15
 20. 	porcentaje <-- 15
 21.	descuento <-- (subtotal * porcentaje)/100
 22. 	Total <-- (subtotal - descuento)
 23. 	Escribir "Su total a pagar es : " + Total
 24. Fin si	
 
-25. Si numeroDias >= 15 
+25. Si numeroDias > 15 
 26. 	porcentaje <-- 20
 27.	descuento <-- (subtotal * porcentaje)/100
 28. 	Total <-- (subtotal - descuento)
